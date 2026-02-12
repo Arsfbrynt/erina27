@@ -1,0 +1,1406 @@
+<!doctype html>
+<html lang="id" style="height: 100%; width: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>27 Hal yang Aku Suka Dari Erina</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Quicksand:wght@400;500;600&family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --soft-pink: #fadadd;
+        --pastel-pink: #f8c8dc;
+        --rose-pink: #f4a6c1;
+        --cream: #fff5f7;
+        --accent-gold: #e6b7c1;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+          135deg,
+          #fff5f7 0%,
+          #fadadd 50%,
+          #f8c8dc 100%
+        );
+      }
+
+      body {
+        font-family: "Quicksand", sans-serif;
+        overflow-x: hidden;
+      }
+
+      .font-display {
+        font-family: "Playfair Display", serif;
+      }
+
+      .font-script {
+        font-family: "Dancing Script", cursive;
+      }
+
+      .page {
+        transform-style: preserve-3d;
+        transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        transform-origin: center;
+        backface-visibility: hidden;
+      }
+
+      .page.flipped {
+        transform: rotateY(-180deg);
+      }
+
+      .page-front,
+      .page-back {
+        backface-visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(244, 166, 193, 0.3);
+      }
+
+      .page-back {
+        transform: rotateY(180deg);
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes floatHeart {
+        0%,
+        100% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 0.6;
+        }
+        50% {
+          transform: translateY(-20px) rotate(10deg);
+          opacity: 1;
+        }
+      }
+
+      @keyframes sparkle {
+        0%,
+        100% {
+          opacity: 0.3;
+          transform: scale(0.8);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.2);
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+          transform: translateX(-5px);
+        }
+        20%,
+        40%,
+        60%,
+        80% {
+          transform: translateX(5px);
+        }
+      }
+
+      @keyframes confetti-fall {
+        0% {
+          transform: translateY(-100%) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh) rotate(720deg);
+          opacity: 0;
+        }
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes loadingProgress {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+
+      .floating-heart {
+        animation: floatHeart 3s ease-in-out infinite;
+      }
+
+      .sparkle {
+        animation: sparkle 2s ease-in-out infinite;
+      }
+
+      .pulse-gentle {
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .shake {
+        animation: shake 0.5s ease-in-out;
+      }
+
+      .btn-romantic {
+        background: linear-gradient(135deg, #f4a6c1 0%, #f8c8dc 100%);
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(244, 166, 193, 0.4);
+      }
+
+      .btn-romantic:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(244, 166, 193, 0.6);
+      }
+
+      .photo-frame {
+        background: linear-gradient(135deg, #fff5f7 0%, #fadadd 100%);
+        border: 3px solid #e6b7c1;
+        box-shadow: 0 8px 30px rgba(230, 183, 193, 0.4);
+        overflow: hidden;
+      }
+
+      .photo-frame img {
+        transition: transform 0.5s ease;
+      }
+
+      .photo-frame:hover img {
+        transform: scale(1.08);
+      }
+
+      .polaroid {
+        background: white;
+        padding: 12px 12px 40px 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        transform: rotate(-2deg);
+        transition: all 0.3s ease;
+      }
+
+      .polaroid:hover {
+        transform: rotate(0deg) scale(1.05);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .pattern-bg {
+        background-image:
+          radial-gradient(
+            circle at 20% 80%,
+            rgba(244, 166, 193, 0.1) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(248, 200, 220, 0.1) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 40% 40%,
+            rgba(230, 183, 193, 0.08) 0%,
+            transparent 30%
+          );
+      }
+
+      .progress-bar {
+        background: linear-gradient(90deg, #f4a6c1 0%, #e6b7c1 100%);
+      }
+
+      .nav-btn {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+      }
+
+      .nav-btn:hover:not(:disabled) {
+        background: #fadadd;
+        transform: scale(1.1);
+      }
+
+      .nav-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      .page-content {
+        background: linear-gradient(180deg, #ffffff 0%, #fff5f7 100%);
+      }
+
+      .reason-number {
+        background: linear-gradient(135deg, #f4a6c1 0%, #f8c8dc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .decorative-border {
+        border: 2px solid #e6b7c1;
+        border-radius: 20px;
+        position: relative;
+      }
+
+      .decorative-border::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border: 1px solid #f8c8dc;
+        border-radius: 24px;
+        pointer-events: none;
+      }
+
+      .confetti {
+        position: fixed;
+        width: 10px;
+        height: 10px;
+        z-index: 9999;
+        animation: confetti-fall 3s linear forwards;
+      }
+
+      .hidden-message {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .reveal:hover .hidden-message {
+        opacity: 1;
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #f4a6c1 0%, #e6b7c1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* Loading Screen */
+      #loading-screen {
+        position: fixed;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          #fff5f7 0%,
+          #fadadd 50%,
+          #f8c8dc 100%
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        transition: opacity 0.5s ease;
+      }
+
+      #loading-screen.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .spinner {
+        width: 60px;
+        height: 60px;
+        border: 4px solid #f8c8dc;
+        border-top: 4px solid #f4a6c1;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      .loading-bar {
+        width: 200px;
+        height: 6px;
+        background: #fadadd;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 20px;
+      }
+
+      .loading-bar-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #f4a6c1 0%, #e6b7c1 100%);
+        border-radius: 10px;
+        transition: width 0.3s ease;
+      }
+
+      /* Music Control Button */
+      .music-control {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 56px;
+        height: 56px;
+        background: linear-gradient(135deg, #f4a6c1 0%, #f8c8dc 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 20px rgba(244, 166, 193, 0.5);
+        transition: all 0.3s ease;
+        z-index: 9998;
+      }
+
+      .music-control:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 30px rgba(244, 166, 193, 0.7);
+      }
+
+      .music-control.playing {
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      @media (max-width: 768px) {
+        .flipbook-wrapper {
+          padding: 0;
+        }
+
+        .music-control {
+          bottom: 15px;
+          right: 15px;
+          width: 48px;
+          height: 48px;
+        }
+      }
+
+      /* Layout variations */
+      .layout-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .layout-split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .layout-top {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-elevated {
+        background: white;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 40px rgba(244, 166, 193, 0.25);
+      }
+
+      .photo-circle {
+        border-radius: 50%;
+        border: 4px solid #f4a6c1;
+        padding: 4px;
+        background: white;
+      }
+
+      .photo-heart {
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+      }
+
+      .book-container {
+        padding: 0 20px;
+        max-width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        .book-container {
+          padding: 20px 50px;
+        }
+      }
+
+      .book-spine {
+        left: -15px;
+        width: 15px;
+      }
+
+      @media (max-width: 768px) {
+        .book-spine {
+          left: -12px;
+          width: 12px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .book-wrapper {
+          max-width: 90vw;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="height: 100%; width: 100%">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="text-center">
+        <div class="spinner mb-4 mx-auto"></div>
+        <p class="font-display text-xl text-pink-500 mb-2">
+          Tunggu bentar ya...
+        </p>
+        <div class="loading-bar">
+          <div
+            id="loading-bar-fill"
+            class="loading-bar-fill"
+            style="width: 0%"
+          ></div>
+        </div>
+        <p id="loading-text" class="text-pink-400 text-sm mt-2">0%</p>
+      </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+      <source src="https://files.catbox.moe/r6w35j.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Music Control Button -->
+    <div
+      id="music-control"
+      class="music-control playing"
+      onclick="toggleMusic()"
+    >
+      <svg
+        id="music-icon-play"
+        class="w-7 h-7 text-white"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z"
+        />
+      </svg>
+      <svg
+        id="music-icon-pause"
+        class="w-7 h-7 text-white hidden"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+
+    <div id="app" class="h-full w-full pattern-bg overflow-y-auto">
+      <!-- Floating Hearts Background -->
+      <div class="fixed inset-0 pointer-events-none overflow-hidden z-[999]">
+        <div
+          class="floating-heart absolute text-pink-300 text-2xl"
+          style="left: 5%; top: 20%; animation-delay: 0s"
+        >
+          💕
+        </div>
+        <div
+          class="floating-heart absolute text-pink-200 text-xl"
+          style="left: 15%; top: 60%; animation-delay: 0.5s"
+        >
+          💗
+        </div>
+        <div
+          class="floating-heart absolute text-pink-300 text-lg"
+          style="left: 85%; top: 30%; animation-delay: 1s"
+        >
+          💖
+        </div>
+        <div
+          class="floating-heart absolute text-pink-200 text-2xl"
+          style="left: 90%; top: 70%; animation-delay: 1.5s"
+        >
+          💕
+        </div>
+        <div
+          class="floating-heart absolute text-pink-300 text-xl"
+          style="left: 50%; top: 10%; animation-delay: 2s"
+        >
+          💗
+        </div>
+        <div
+          class="sparkle absolute text-yellow-300 text-sm"
+          style="left: 10%; top: 40%"
+        >
+          ✨
+        </div>
+        <div
+          class="sparkle absolute text-yellow-200 text-xs"
+          style="left: 80%; top: 50%; animation-delay: 0.7s"
+        >
+          ✨
+        </div>
+        <div
+          class="sparkle absolute text-yellow-300 text-sm"
+          style="left: 30%; top: 80%; animation-delay: 1.4s"
+        >
+          ✨
+        </div>
+      </div>
+
+      <!-- Cover Page -->
+      <div
+        id="cover-page"
+        class="w-full px-4 pt-6 pb-6 relative z-10 flex items-center justify-center min-h-full"
+        style="min-height: 100%"
+      >
+        <div class="text-center max-w-sm animate-fade-in-up">
+          <div class="mb-4"><span class="text-5xl">💝</span></div>
+          <h1
+            class="font-display text-3xl md:text-4xl font-bold text-rose-400 mb-3 leading-tight"
+          >
+            27 Hal yang Aku Suka Dari Erina
+          </h1>
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <div
+              class="h-px w-10 bg-gradient-to-r from-transparent to-pink-300"
+            ></div>
+            <span class="text-pink-400">♡</span>
+            <div
+              class="h-px w-10 bg-gradient-to-l from-transparent to-pink-300"
+            ></div>
+          </div>
+          <p class="font-display text-lg md:text-xl text-pink-500 italic mb-6">
+            Untuk 27 mu yg spesial ❤️
+          </p>
+          <div class="mb-6 pulse-gentle">
+            <svg viewbox="0 0 200 160" class="w-40 h-32 mx-auto">
+              <path
+                d="M100 140 C60 100, 20 70, 20 50 C20 25, 45 15, 65 30 C80 42, 90 55, 100 70 C110 55, 120 42, 135 30 C155 15, 180 25, 180 50 C180 70, 140 100, 100 140Z"
+                fill="#F8C8DC"
+                opacity="0.5"
+              />
+              <circle cx="75" cy="65" r="20" fill="#FFE4E1" />
+              <ellipse cx="75" cy="90" rx="15" ry="20" fill="#F4A6C1" />
+              <path
+                d="M55 55 Q65 35, 75 40 Q85 35, 95 55"
+                fill="#8B4513"
+                opacity="0.7"
+              />
+              <circle cx="70" cy="62" r="2" fill="#333" />
+              <circle cx="80" cy="62" r="2" fill="#333" />
+              <path
+                d="M72 70 Q75 73, 78 70"
+                stroke="#E6B7C1"
+                stroke-width="2"
+                fill="none"
+              />
+              <circle cx="125" cy="60" r="22" fill="#FFE4E1" />
+              <ellipse
+                cx="125"
+                cy="88"
+                rx="18"
+                ry="22"
+                fill="#87CEEB"
+                opacity="0.7"
+              />
+              <rect
+                x="108"
+                y="40"
+                width="34"
+                height="15"
+                rx="3"
+                fill="#4A4A4A"
+              />
+              <circle cx="118" cy="57" r="2" fill="#333" />
+              <circle cx="132" cy="57" r="2" fill="#333" />
+              <path
+                d="M120 67 Q125 70, 130 67"
+                stroke="#E6B7C1"
+                stroke-width="2"
+                fill="none"
+              />
+              <path
+                d="M100 95 C97 90, 92 88, 92 84 C92 80, 96 78, 100 82 C104 78, 108 80, 108 84 C108 88, 103 90, 100 95Z"
+                fill="#F4A6C1"
+              />
+            </svg>
+          </div>
+          <button
+            onclick="startReading()"
+            class="btn-romantic text-white font-semibold px-6 py-3 rounded-full text-base inline-flex items-center gap-2"
+          >
+            <span>Mau Baca</span>
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </button>
+          <div class="mt-6 flex justify-center gap-2">
+            <span class="text-pink-300 text-lg">🌸</span>
+            <span class="text-pink-400 text-lg">💐</span>
+            <span class="text-pink-300 text-lg">🌸</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flipbook Section -->
+      <div
+        id="flipbook-section"
+        class="hidden w-full relative z-[100] flex flex-col items-center justify-center min-h-full px-4 py-8"
+      >
+        <div class="w-full max-w-sm mb-4">
+          <div class="flex justify-between text-sm text-pink-500 mb-1">
+            <span>Halaman</span> <span id="page-indicator">1 / 27</span>
+          </div>
+          <div class="h-2 bg-pink-100 rounded-full overflow-hidden">
+            <div
+              id="progress-fill"
+              class="progress-bar h-full rounded-full transition-all duration-500"
+              style="width: 3.7%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="book-container mb-8 w-full">
+          <div class="book-wrapper">
+            <div
+              id="flipbook"
+              class="relative mx-auto"
+              style="
+                width: 100%;
+                height: 480px;
+                max-width: min(340px, 85vw);
+                max-height: 75vh;
+              "
+            >
+              <!-- Pages generated by JS -->
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 md:gap-6">
+          <button
+            id="prev-btn"
+            onclick="prevPage()"
+            class="nav-btn w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-lg"
+            disabled
+          >
+            <svg
+              class="w-5 h-5 md:w-6 md:h-6 text-pink-500"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <div class="text-center">
+            <span class="text-2xl md:text-3xl">📖</span>
+          </div>
+          <button
+            id="next-btn"
+            onclick="nextPage()"
+            class="nav-btn w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-lg"
+          >
+            <svg
+              class="w-5 h-5 md:w-6 md:h-6 text-pink-500"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <p class="text-pink-400 text-xs md:text-sm mt-4 md:hidden">
+          ← Geser atau klik untuk membalik →
+        </p>
+      </div>
+
+      <!-- Closing Page -->
+      <div
+        id="closing-page"
+        class="hidden w-full px-4 pt-6 pb-6 relative z-10 flex items-center justify-center min-h-full"
+        style="min-height: 100%"
+      >
+        <div class="text-center max-w-sm animate-fade-in-up">
+          <div class="mb-4"><span class="text-5xl">💖</span></div>
+          <div class="decorative-border p-6 bg-white/80 backdrop-blur-sm mb-6">
+            <p
+              class="font-display text-base md:text-lg text-pink-600 leading-relaxed mb-4"
+            >
+              Setiap hari bersamamu adalah hadiah terindah yang pernah aku
+              terima. Kamu mengajariku arti cinta yang sesungguhnya, kesabaran
+              yang tak terbatas, dan kebahagiaan dalam hal-hal sederhana.
+            </p>
+            <div class="flex items-center justify-center gap-2 mb-4">
+              <span class="text-pink-300">✨</span>
+              <span class="text-pink-400">💕</span>
+              <span class="text-pink-300">✨</span>
+            </div>
+            <p
+              class="font-display text-lg md:text-xl text-rose-500 font-semibold italic"
+            >
+              "Terima kasih sudah menjadi bagian terindah dalam hidupku ❤️"
+            </p>
+          </div>
+          <div class="mb-6">
+            <svg viewbox="0 0 200 100" class="w-32 h-16 mx-auto">
+              <path
+                d="M30 50 C30 30, 50 20, 70 35 L100 60 L130 35 C150 20, 170 30, 170 50 C170 70, 140 90, 100 95 C60 90, 30 70, 30 50Z"
+                fill="#F4A6C1"
+                opacity="0.6"
+              />
+              <text
+                x="100"
+                y="60"
+                text-anchor="middle"
+                fill="#E6B7C1"
+                font-family="Playfair Display"
+                font-size="12"
+                font-style="italic"
+              >
+                Forever
+              </text>
+            </svg>
+          </div>
+          <button
+            onclick="restartBook()"
+            class="btn-romantic text-white font-semibold px-6 py-3 rounded-full text-base inline-flex items-center gap-2"
+          >
+            <span>Our Next Chapter</span> <span>💝</span>
+          </button>
+          <div class="mt-6">
+            <p class="text-pink-400 text-xs md:text-sm">
+              Dengan segenap cinta,
+            </p>
+            <p class="font-display text-lg md:text-xl text-rose-500 mt-2">
+              Suamimu 💕
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // DATA STRUCTURE
+      const reasonsData = [
+        {
+          text: "Ke-adorable-an mu yg selalu menumbuhkan dopamin",
+          photo:
+            "https://i.ibb.co.com/tP3Z1n76/20250402-181425.jpg?w=400&h=400&fit=crop",
+          emoji: "👶",
+          layout: "card",
+        },
+        {
+          text: "Senyummu yang selalu bisa melelehkan hatiku setiap kali kita bertatapan",
+          photo: "https://i.ibb.co.com/fGSCgjXp/20260115-181018.avif",
+          emoji: "😊",
+          layout: "split",
+        },
+        {
+          text: "Caramu tertawa dengan lepas yang membuatku ikut bahagia",
+          photo: "https://i.ibb.co.com/4gTW0Dr0/20250131-142040.jpg",
+          emoji: "😄",
+          layout: "polaroid",
+        },
+        {
+          text: "Kesabaranmu yang luar biasa menghadapi semua kekuranganku",
+          photo:
+            "https://i.ibb.co.com/V08c6M2z/20250530-144656.jpg?w=400&h=400&fit=crop",
+          emoji: "🙏",
+          layout: "card",
+        },
+        {
+          text: "Matamu yang berbinar setiap kali bercerita tentang hal favoritmu",
+          photo:
+            "https://i.ibb.co.com/C5tkJsPF/Screenshot-20240412-194608-Instagram.jpg?w=400&h=400&fit=crop",
+          emoji: "✨",
+          layout: "polaroid",
+        },
+        {
+          text: "Caramu memasak dengan penuh cinta untuk kita",
+          photo:
+            "https://i.ibb.co.com/WWSVBYWs/MTXX-MH20231231-132835126.jpg?w=400&h=400&fit=crop",
+          emoji: "👩‍🍳",
+          layout: "center",
+        },
+        {
+          text: "Kesetiaanmu yang tak pernah goyah dalam suka dan duka",
+          photo:
+            "https://i.ibb.co.com/FkmqtKP1/Screenshot-20260212-201554-Photos.jpg?w=400&h=400&fit=crop",
+          emoji: "💍",
+          layout: "polaroid",
+        },
+        {
+          text: "Pelukan hangatmu yang selalu terasa seperti rumah",
+          photo:
+            "https://i.ibb.co.com/0Vt7ScLz/MTXX-MR20240916-104008893.jpg?w=400&h=400&fit=crop",
+          emoji: "🤗",
+          layout: "card",
+        },
+        {
+          text: "Caramu menenangkanku di setiap gelisah",
+          photo:
+            "https://i.ibb.co.com/C5tkJsPF/Screenshot-20240412-194608-Instagram.jpg?w=400&h=400&fit=crop",
+          emoji: "🎵",
+          layout: "split",
+        },
+        {
+          text: "Caramu selalu ingat hal-hal kecil yang penting bagiku",
+          photo:
+            "https://i.ibb.co.com/jkqNWdB7/20260212-125049.jpg?w=400&h=400&fit=crop",
+          emoji: "🎁",
+          layout: "card",
+        },
+        {
+          text: "Support yg selalu menghilangkan kemalasanku",
+          photo:
+            "https://i.ibb.co.com/qMj49LSh/20251221-172331.avif?w=400&h=400&fit=crop",
+          emoji: "🩵",
+          layout: "top",
+        },
+        {
+          text: "Dukunganmu yang tanpa batas untuk semua impianku",
+          photo:
+            "https://i.ibb.co.com/7xmsbzqS/20250201-210040.jpg?w=400&h=400&fit=crop",
+          emoji: "🚀",
+          layout: "center",
+        },
+        {
+          text: "Caramu memaafkan dengan tulus setiap kesalahanku, meskipun bete dulu",
+          photo:
+            "https://i.ibb.co.com/JF28nwSc/20251213-213033.avif?w=400&h=400&fit=crop",
+          emoji: "🕊️",
+          layout: "polaroid",
+        },
+        {
+          text: "Hadirmu untuk menemaniku nonton apa yg ku mau",
+          photo:
+            "https://i.ibb.co.com/LhvMNtkp/20250226-095929-0.avif?w=400&h=400&fit=crop",
+          emoji: "🎬",
+          layout: "split",
+        },
+        {
+          text: "Keberanianmu menghadapi tantangan hidup bersama",
+          photo:
+            "https://i.ibb.co.com/gbhLd36s/MEITU-20250331-084010531.jpg?w=400&h=400&fit=crop",
+          emoji: "💪",
+          layout: "card",
+        },
+        {
+          text: "Caramu menatapku yang membuatku merasa paling spesial",
+          photo:
+            "https://i.ibb.co.com/CK4cMqNx/20260212-125049.jpg?w=400&h=400&fit=crop",
+          emoji: "👀",
+          layout: "top",
+        },
+        {
+          text: "Perhatianmu yang mengubah hidupku",
+          photo:
+            "https://i.ibb.co.com/YBBwJ7xp/1000154834.jpg?w=400&h=400&fit=crop",
+          emoji: "🥰",
+          layout: "center",
+        },
+        {
+          text: "Kejujuranmu yang membangun kepercayaan kita",
+          photo:
+            "https://i.ibb.co.com/cS7vKzMz/Chat-GPT-Image-Apr-14-2025-09-36-11-PM.png?w=400&h=400&fit=crop",
+          emoji: "🔒",
+          layout: "polaroid",
+        },
+        {
+          text: "Caramu menyemangatiku saat aku hampir menyerah",
+          photo:
+            "https://i.ibb.co.com/k2PphN5X/20251206-172835.jpg?w=400&h=400&fit=crop",
+          emoji: "📣",
+          layout: "split",
+        },
+        {
+          text: "Doamu yang selalu menyertaiku setiap langkah",
+          photo:
+            "https://i.ibb.co.com/20B1JcgC/20250530-144656.jpg?w=400&h=400&fit=crop",
+          emoji: "🤲",
+          layout: "card",
+        },
+        {
+          text: "Kebaikanmu untuk semua orang dekat",
+          photo:
+            "https://i.ibb.co.com/mCQNhMCS/MTXX-MH20231231-132835126.jpg?w=400&h=400&fit=crop",
+          emoji: "🌸",
+          layout: "top",
+        },
+        {
+          text: "Kemandirianmu, ga semua orang bisa",
+          photo:
+            "https://i.ibb.co.com/39jQ7df8/2024071420-53-23-991-image-repair-1720965222919.jpg?w=400&h=400&fit=crop",
+          emoji: "💝",
+          layout: "polaroid",
+        },
+        {
+          text: "Kepedulianmu padaku yang sangat menyentuh",
+          photo:
+            "https://i.ibb.co.com/YBNbLJcY/20250220-202936.avif?w=400&h=400&fit=crop",
+          emoji: "👨‍👩‍👧‍👦",
+          layout: "split",
+        },
+        {
+          text: "Caramu membuat rumah kita terasa hangat dan penuh cinta",
+          photo:
+            "https://i.ibb.co.com/BHcKRt1J/Screenshot-20260212-201554-Photos.jpg?w=400&h=400&fit=crop",
+          emoji: "🏡",
+          layout: "card",
+        },
+        {
+          text: "Tanggung jawabmu kepadaku (suami)",
+          photo:
+            "https://i.ibb.co.com/7xLdQXb7/MEITU-20250331-084010531.jpg?w=400&h=800&fit=crop",
+          emoji: "⭐",
+          layout: "card",
+        },
+        {
+          text: "Caramu berbagi kebahagiaan dengan orang-orang tercinta",
+          photo:
+            "https://i.ibb.co.com/mCQNhMCS/MTXX-MH20231231-132835126.jpg?w=400&h=400&fit=crop",
+          emoji: "🎉",
+          layout: "center",
+        },
+        {
+          text: "Cintamu yang tulus ❤️",
+          photo:
+            "https://i.ibb.co.com/LzYYYHYb/Screenshot-20260212-201528-Photos.jpg?w=400&h=400&fit=crop",
+          emoji: "❤️",
+          layout: "special",
+        },
+      ];
+
+      let currentPage = 0;
+      const totalPages = reasonsData.length;
+      let musicPlaying = false;
+      const bgMusic = document.getElementById("bg-music");
+      const musicControl = document.getElementById("music-control");
+      const musicIconPlay = document.getElementById("music-icon-play");
+      const musicIconPause = document.getElementById("music-icon-pause");
+
+      // Preload images
+      function preloadImages() {
+        return new Promise((resolve) => {
+          const images = reasonsData.map((r) => r.photo);
+          let loadedCount = 0;
+          const totalImages = images.length;
+
+          if (totalImages === 0) {
+            resolve();
+            return;
+          }
+
+          images.forEach((src) => {
+            const img = new Image();
+            img.onload = img.onerror = () => {
+              loadedCount++;
+              const progress = Math.round((loadedCount / totalImages) * 100);
+              document.getElementById("loading-bar-fill").style.width =
+                progress + "%";
+              document.getElementById("loading-text").textContent =
+                progress + "%";
+
+              if (loadedCount === totalImages) {
+                setTimeout(() => resolve(), 500);
+              }
+            };
+            img.src = src;
+          });
+        });
+      }
+
+      // Music control
+      function toggleMusic() {
+        if (musicPlaying) {
+          bgMusic.pause();
+          musicPlaying = false;
+          musicControl.classList.remove("playing");
+          musicIconPlay.classList.remove("hidden");
+          musicIconPause.classList.add("hidden");
+        } else {
+          bgMusic.play().catch((err) => console.log("Audio play failed:", err));
+          musicPlaying = true;
+          musicControl.classList.add("playing");
+          musicIconPlay.classList.add("hidden");
+          musicIconPause.classList.remove("hidden");
+        }
+      }
+
+      // Auto-play music on user interaction
+      function autoPlayMusic() {
+        bgMusic
+          .play()
+          .then(() => {
+            musicPlaying = true;
+            musicControl.classList.add("playing");
+            musicIconPlay.classList.add("hidden");
+            musicIconPause.classList.remove("hidden");
+          })
+          .catch((err) => {
+            console.log("Auto-play prevented, user must click to play");
+          });
+      }
+
+      function generatePages() {
+        const flipbook = document.getElementById("flipbook");
+        flipbook.innerHTML = "";
+
+        reasonsData.forEach((reason, i) => {
+          const page = document.createElement("div");
+          page.className = "page absolute inset-0";
+          page.style.zIndex = totalPages - i;
+          page.dataset.page = i;
+
+          let layoutHTML = "";
+
+          switch (reason.layout) {
+            case "polaroid":
+              layoutHTML = `
+                <div class="page-front page-content absolute inset-0 p-6 flex flex-col rounded-lg">
+                  <div class="flex justify-between items-center mb-3">
+                    <span class="text-2xl">${reason.emoji}</span>
+                    <span class="text-pink-300 text-sm">My Favorite ke-${i + 1}</span>
+                  </div>
+                  <div class="flex-1 flex items-center justify-center">
+                    <div class="polaroid">
+                      <img src="${reason.photo}" class="w-48 h-48 object-cover" />
+                      <div class="mt-3 text-center font-script text-pink-600 text-sm">#${i + 1}</div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <p class="font-display text-center text-sm text-pink-700 leading-relaxed italic">"${reason.text}"</p>
+                  </div>
+                </div>
+              `;
+              break;
+
+            case "split":
+              layoutHTML = `
+                <div class="page-front page-content absolute inset-0 p-5 flex flex-col rounded-lg">
+                  <div class="flex justify-between items-center mb-3">
+                    <span class="text-2xl">${reason.emoji}</span>
+                    <span class="text-pink-300 text-sm">My Favorite ke-${i + 1}</span>
+                  </div>
+                  <div class="flex-1 grid grid-cols-2 gap-4 items-center">
+                    <div>
+                      <div class="reason-number font-display text-5xl font-bold mb-3">#${i + 1}</div>
+                      <p class="font-display text-xs text-pink-700 leading-relaxed">"${reason.text}"</p>
+                    </div>
+                    <div class="photo-circle">
+                      <img src="${reason.photo}" class="w-full h-32 object-cover rounded-full" />
+                    </div>
+                  </div>
+                  <div class="flex justify-center gap-1 mt-2">
+                    <span class="text-pink-200 text-xs">✿</span>
+                    <span class="text-pink-300 text-xs">♡</span>
+                    <span class="text-pink-200 text-xs">✿</span>
+                  </div>
+                </div>
+              `;
+              break;
+
+            case "card":
+              layoutHTML = `
+                <div class="page-front page-content absolute inset-0 p-5 flex flex-col rounded-lg">
+                  <div class="flex justify-between items-center mb-3">
+                    <span class="text-2xl">${reason.emoji}</span>
+                    <span class="text-pink-300 text-sm">My Favorite ke-${i + 1}</span>
+                  </div>
+                  <div class="flex-1 flex items-center justify-center">
+                    <div class="card-elevated w-full max-w-xs">
+                      <div class="text-center mb-3">
+                        <span class="reason-number font-display text-4xl font-bold">#${i + 1}</span>
+                      </div>
+                      <div class="photo-frame rounded-lg p-2 mb-3 mx-auto w-32 h-32">
+                        <img src="${reason.photo}" class="rounded-md w-full h-full object-cover" />
+                      </div>
+                      <p class="font-display text-center text-xs text-pink-700 leading-relaxed">"${reason.text}"</p>
+                    </div>
+                  </div>
+                </div>
+              `;
+              break;
+
+            case "top":
+              layoutHTML = `
+                <div class="page-front page-content absolute inset-0 p-5 flex flex-col rounded-lg">
+                  <div class="flex justify-between items-center mb-2">
+                    <span class="text-2xl">${reason.emoji}</span>
+                    <span class="text-pink-300 text-sm">My Favorite ke-${i + 1}</span>
+                  </div>
+                  <div class="photo-frame rounded-lg p-2 mb-3 mx-auto w-full h-40">
+                    <img src="${reason.photo}" class="rounded-md w-full h-full object-cover" />
+                  </div>
+                  <div class="text-center mb-3">
+                    <span class="reason-number font-display text-4xl font-bold">#${i + 1}</span>
+                  </div>
+                  <div class="flex-1 flex items-center justify-center px-3">
+                    <p class="font-display text-center text-sm text-pink-700 leading-relaxed">"${reason.text}"</p>
+                  </div>
+                  <div class="flex justify-center gap-1 mt-2">
+                    <span class="text-pink-200 text-xs">✿</span>
+                    <span class="text-pink-300 text-xs">♡</span>
+                    <span class="text-pink-200 text-xs">✿</span>
+                  </div>
+                </div>
+              `;
+              break;
+
+            case "special":
+              layoutHTML = `
+                <div class="page-front page-content absolute inset-0 p-5 flex flex-col rounded-lg reveal">
+                  <div class="flex justify-center mb-3">
+                    <span class="text-4xl pulse-gentle">${reason.emoji}</span>
+                  </div>
+                  <div class="flex-1 flex items-center justify-center">
+                    <div class="text-center">
+                      <div class="photo-frame rounded-full p-3 mb-4 mx-auto w-40 h-40 pulse-gentle">
+                        <img src="${reason.photo}" class="rounded-full w-full h-full object-cover" />
+                      </div>
+                      <div class="gradient-text font-display text-5xl font-bold mb-4">#${i + 1}</div>
+                      <p class="font-script text-xl text-pink-600 leading-relaxed px-4">"${reason.text}"</p>
+                      <div class="hidden-message mt-4 text-sm text-pink-400 italic">Hover untuk pesan rahasia ✨</div>
+                    </div>
+                  </div>
+                  <div class="flex justify-center gap-2 mt-3">
+                    <span class="text-pink-300 text-lg">💕</span>
+                    <span class="text-pink-400 text-lg">💖</span>
+                    <span class="text-pink-300 text-lg">💕</span>
+                  </div>
+                </div>
+              `;
+              break;
+
+            default:
+              layoutHTML = `
+                <div class="page-front page-content absolute inset-0 p-5 flex flex-col rounded-lg">
+                  <div class="flex justify-between items-center mb-2">
+                    <span class="text-2xl">${reason.emoji}</span>
+                    <span class="text-pink-300 text-sm">My Favorite ke-${i + 1}</span>
+                  </div>
+                  <div class="text-center mb-3">
+                    <span class="reason-number font-display text-4xl font-bold">#${i + 1}</span>
+                  </div>
+                  <div class="photo-frame rounded-lg p-2 mb-3 mx-auto w-32 h-32 flex-shrink-0">
+                    <img src="${reason.photo}" class="rounded-md w-full h-full object-cover" />
+                  </div>
+                  <div class="flex-1 flex items-center justify-center px-3">
+                    <p class="font-display text-center text-sm text-pink-700 leading-relaxed">"${reason.text}"</p>
+                  </div>
+                  <div class="flex justify-center gap-1 mt-2">
+                    <span class="text-pink-200 text-xs">✿</span>
+                    <span class="text-pink-300 text-xs">♡</span>
+                    <span class="text-pink-200 text-xs">✿</span>
+                  </div>
+                </div>
+              `;
+          }
+
+          page.innerHTML = layoutHTML;
+          flipbook.appendChild(page);
+        });
+      }
+
+      function createConfetti() {
+        const colors = ["#f4a6c1", "#f8c8dc", "#fadadd", "#e6b7c1", "#ffb6c1"];
+        for (let i = 0; i < 50; i++) {
+          setTimeout(() => {
+            const confetti = document.createElement("div");
+            confetti.className = "confetti";
+            confetti.style.left = Math.random() * 100 + "%";
+            confetti.style.background =
+              colors[Math.floor(Math.random() * colors.length)];
+            confetti.style.animationDelay = Math.random() * 2 + "s";
+            document.body.appendChild(confetti);
+            setTimeout(() => confetti.remove(), 3000);
+          }, i * 30);
+        }
+      }
+
+      function startReading() {
+        document.getElementById("cover-page").classList.add("hidden");
+        document.getElementById("flipbook-section").classList.remove("hidden");
+        currentPage = 0;
+        updatePageIndicator();
+        updateNavButtons();
+        autoPlayMusic();
+      }
+
+      function nextPage() {
+        if (currentPage < totalPages - 1) {
+          const pages = document.querySelectorAll(".page");
+          pages[currentPage].classList.add("flipped");
+          currentPage++;
+          if (
+            currentPage === Math.floor(totalPages / 2) ||
+            currentPage === totalPages - 1
+          ) {
+            createConfetti();
+          }
+          updatePageIndicator();
+          updateNavButtons();
+        } else {
+          createConfetti();
+          setTimeout(() => {
+            document.getElementById("flipbook-section").classList.add("hidden");
+            document.getElementById("closing-page").classList.remove("hidden");
+          }, 500);
+        }
+      }
+
+      function prevPage() {
+        if (currentPage > 0) {
+          currentPage--;
+          const pages = document.querySelectorAll(".page");
+          pages[currentPage].classList.remove("flipped");
+          updatePageIndicator();
+          updateNavButtons();
+        }
+      }
+
+      function updatePageIndicator() {
+        document.getElementById("page-indicator").textContent =
+          `${currentPage + 1} / ${totalPages}`;
+        const progress = ((currentPage + 1) / totalPages) * 100;
+        document.getElementById("progress-fill").style.width = `${progress}%`;
+      }
+
+      function updateNavButtons() {
+        document.getElementById("prev-btn").disabled = currentPage === 0;
+        document.getElementById("next-btn").disabled = false;
+      }
+
+      function restartBook() {
+        document.querySelectorAll(".page").forEach((page) => {
+          page.classList.remove("flipped");
+        });
+        currentPage = 0;
+        document.getElementById("closing-page").classList.add("hidden");
+        document.getElementById("cover-page").classList.remove("hidden");
+      }
+
+      function setupSwipeGestures() {
+        const flipbook = document.getElementById("flipbook");
+        let startX = 0;
+        let startY = 0;
+
+        flipbook.addEventListener(
+          "touchstart",
+          (e) => {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+          },
+          { passive: true },
+        );
+
+        flipbook.addEventListener(
+          "touchend",
+          (e) => {
+            const endX = e.changedTouches[0].clientX;
+            const endY = e.changedTouches[0].clientY;
+            const diffX = startX - endX;
+            const diffY = startY - endY;
+
+            if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+              if (diffX > 0) {
+                nextPage();
+              } else {
+                prevPage();
+              }
+            }
+          },
+          { passive: true },
+        );
+
+        flipbook.addEventListener("click", (e) => {
+          const rect = flipbook.getBoundingClientRect();
+          const clickX = e.clientX - rect.left;
+          if (clickX > rect.width / 2) {
+            nextPage();
+          } else {
+            prevPage();
+          }
+        });
+      }
+
+      // Initialize
+      async function init() {
+        await preloadImages();
+        document.getElementById("loading-screen").classList.add("hidden");
+        generatePages();
+        setupSwipeGestures();
+      }
+
+      init();
+    </script>
+  </body>
+</html>
